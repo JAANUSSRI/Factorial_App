@@ -1,9 +1,6 @@
 package com.SoftwareEngineering.FactorialApp.service;
-
 import org.springframework.stereotype.Service;
-
 import java.util.List;
-
 @Service
 public class HtmlTableFormatterImpl implements HtmlTableFormatter{
     @Override
@@ -18,16 +15,13 @@ public class HtmlTableFormatterImpl implements HtmlTableFormatter{
                 "</style>\n" +
                 "</head>\n" +
                 "<body> <h2>" + title  + "</h2>";
-
         htmlOutput += "<table style=\"width:50%\">";
-
         //form header
         htmlOutput += "<tr>";
         for (String colHeader: header){
             htmlOutput += "<th>" + colHeader + "</th>";
         }
         htmlOutput += "</tr>";
-
         //form body
         for (List<String> row: body) {
             htmlOutput += "<tr>";
@@ -36,12 +30,9 @@ public class HtmlTableFormatterImpl implements HtmlTableFormatter{
             }
             htmlOutput += "</tr>";
         }
-
         htmlOutput += "</table>";
-
         htmlOutput += "</body>\n" +
                 "</html>";
-
         return htmlOutput;
     }
 }

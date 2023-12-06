@@ -22,7 +22,6 @@ public class TestPalindromeCheckerJavaUtilImpl {
         assertTrue(palindromeChecker.IsPalindrome("madam"));
         assertFalse(palindromeChecker.IsPalindrome("dinesh"));
     }
-
     @Test
     void checkForPalindromeList(){
         List<String> words = new ArrayList<>();

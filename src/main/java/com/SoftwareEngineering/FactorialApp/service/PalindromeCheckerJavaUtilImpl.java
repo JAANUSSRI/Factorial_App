@@ -1,12 +1,9 @@
 package com.SoftwareEngineering.FactorialApp.service;
-
 import org.springframework.stereotype.Service;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
-
 @Service
 public class PalindromeCheckerJavaUtilImpl implements PalindromeChecker{
     @Override
@@ -18,7 +15,6 @@ public class PalindromeCheckerJavaUtilImpl implements PalindromeChecker{
         for(char c:  word.toCharArray()) {
             javaStack.push(c);
         }
-
         if (word.length() == javaStack.size()){
             isPalindrome = true;
             for(char c: word.toCharArray()){
@@ -29,7 +25,6 @@ public class PalindromeCheckerJavaUtilImpl implements PalindromeChecker{
         }
         return isPalindrome;
     }
-
     @Override
     public Map<String, Boolean> TestForPalindrome(List<String> words) {
         Map<String, Boolean> mapPalindromeTestResult = new HashMap<>();
