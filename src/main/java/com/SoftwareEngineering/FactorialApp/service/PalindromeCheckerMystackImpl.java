@@ -2,11 +2,9 @@ package com.SoftwareEngineering.FactorialApp.service;
 
 import com.SoftwareEngineering.FactorialApp.MyStack.Mystack;
 import com.SoftwareEngineering.FactorialApp.MyStack.MystackImpl;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 public class PalindromeCheckerMystackImpl implements PalindromeChecker{
     @Override
     public boolean IsPalindrome(String word) {
@@ -17,7 +15,6 @@ public class PalindromeCheckerMystackImpl implements PalindromeChecker{
         for(char c:  word.toCharArray()) {
             javaStack.push(c);
         }
-
         if (word.length() == javaStack.size()){
             isPalindrome = true;
             for(char c: word.toCharArray()){
@@ -28,7 +25,6 @@ public class PalindromeCheckerMystackImpl implements PalindromeChecker{
         }
         return isPalindrome;
     }
-
     @Override
     public Map<String, Boolean> TestForPalindrome(List<String> words) {
         Map<String, Boolean> mapPalindromeTestResult = new HashMap<>();

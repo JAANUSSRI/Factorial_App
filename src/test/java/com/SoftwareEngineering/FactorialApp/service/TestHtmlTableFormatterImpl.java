@@ -1,12 +1,8 @@
 package com.SoftwareEngineering.FactorialApp.service;
-
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 public class TestHtmlTableFormatterImpl {
 
     @Test
@@ -41,6 +37,4 @@ public class TestHtmlTableFormatterImpl {
         assertTrue(htmlOutput.contains("</table>"));
 
     }
-
-
 }
